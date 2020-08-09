@@ -27,7 +27,7 @@ const NavigationBar: React.FC = () => {
         <NavItem>About</NavItem>
         <NavItem>Project</NavItem>
         <NavItem>Member</NavItem>
-        <NavItem>Career</NavItem>
+        <NavItem>Recruit</NavItem>
       </NavItemListStyle>
     </NavContainer>
   );
