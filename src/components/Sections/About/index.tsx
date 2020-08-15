@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.section`
-  height: 20rem;
-  background-color: #f5f6fa;
+  height: 26rem;
+  background-color: #f5f8ff;
 
   display: flex;
   align-items: center;
