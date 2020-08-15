@@ -20,13 +20,23 @@ const NavItemListStyle = styled.div`
 const NavigationBar: React.FC = () => {
   return (
     <NavContainer>
-      <NavTitle>TeamIF</NavTitle>
+      <NavTitle>
+        <a href="/">TeamIF</a>
+      </NavTitle>
 
       <NavItemListStyle>
-        <NavItem>About</NavItem>
-        <NavItem>Project</NavItem>
-        <NavItem>Member</NavItem>
-        <NavItem>Recruit</NavItem>
+        <NavItem>
+          <a href="#about">About</a>
+        </NavItem>
+        <NavItem>
+          <a href="#project">Project</a>
+        </NavItem>
+        <NavItem>
+          <a href="#member">Member</a>
+        </NavItem>
+        <NavItem>
+          <a href="#recruit">Recruit</a>
+        </NavItem>
       </NavItemListStyle>
     </NavContainer>
   );
