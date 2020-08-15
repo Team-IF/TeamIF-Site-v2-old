@@ -11,7 +11,7 @@ const ItemStyle = styled.p`
 
   background-size: 0 100%;
   background-repeat: no-repeat;
-  transition: background-size 0.3s ease-in;
+  transition: background-size 0.2s ease-in;
   background-image: linear-gradient(transparent 80%, var(--color-teamif) 20%);
 
   margin: 0 2rem;
