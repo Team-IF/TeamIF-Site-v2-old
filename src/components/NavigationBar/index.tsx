@@ -8,7 +8,6 @@ const NavContainer = styled.nav`
   flex-direction: row;
   justify-content: space-between;
 
-
   width: 75vw;
   margin: 1rem auto;
 `;
