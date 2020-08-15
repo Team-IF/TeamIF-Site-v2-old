@@ -34,6 +34,7 @@ const ButtonStyle = styled.button`
   border-radius: 50px;
 
   cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
 
   &:hover {
     background-color: var(--color-teamif);
