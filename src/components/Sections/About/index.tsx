@@ -1,55 +1,32 @@
 import React from 'react';
 import styled from 'styled-components';
+import Button from '../../../atomics/Button';
+import { Heading1 } from '../../../atomics/Typography/Heading';
 
 const Container = styled.section`
   height: 26rem;
-  background-color: #f5f8ff;
+  background-color: #f1f6ff;
 
   display: flex;
   align-items: center;
 `;
 
 const BodyStyle = styled.div`
-  margin-left: 10vw;
-`;
-
-const TitleStyle = styled.p`
-  font-size: 2rem;
-  font-weight: bold;
+  margin-left: 20vw;
 `;
 
 const SubTitleStyle = styled.p`
   font-size: 1.3rem;
 `;
 
-const ButtonStyle = styled.button`
-  margin-top: 2rem;
-  border: none;
-
-  background-color: #333333;
-  color: white;
-
-  width: 120px;
-  height: 40px;
-  border-radius: 50px;
-
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-
-  &:hover {
-    background-color: var(--color-teamif);
-    color: white;
-  }
-`;
-
 const About: React.FC = () => {
   return (
     <Container id="about">
       <BodyStyle>
-        <TitleStyle>We Make IF to Reality, Dream to Action.</TitleStyle>
+        <Heading1>We Make IF to Reality, Dream to Action.</Heading1>
         <SubTitleStyle>청소년 프로그래머 팀, TeamIF</SubTitleStyle>
 
-        <ButtonStyle>지원하기</ButtonStyle>
+        <Button>지원하기</Button>
       </BodyStyle>
     </Container>
   );
