@@ -44,16 +44,14 @@ const ButtonStyle = styled.button`
 
 const About: React.FC = () => {
   return (
-    <>
-      <Container id="about">
-        <BodyStyle>
-          <TitleStyle>We Make IF to Reality, Dream to Action.</TitleStyle>
-          <SubTitleStyle>청소년 프로그래머 팀, TeamIF</SubTitleStyle>
+    <Container id="about">
+      <BodyStyle>
+        <TitleStyle>We Make IF to Reality, Dream to Action.</TitleStyle>
+        <SubTitleStyle>청소년 프로그래머 팀, TeamIF</SubTitleStyle>
 
-          <ButtonStyle>지원하기</ButtonStyle>
-        </BodyStyle>
-      </Container>
-    </>
+        <ButtonStyle>지원하기</ButtonStyle>
+      </BodyStyle>
+    </Container>
   );
 };
 
