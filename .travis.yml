@@ -17,6 +17,6 @@ script:
 - yarn run build
 deploy:
   provider: pages:git
-  fqdn: teamif.io
+  fqdn: v2.teamif.io
   local_dir: build
   edge: true
