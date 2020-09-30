@@ -1,0 +1,17 @@
+[
+  {
+    "nickname": "nickname",
+    "email": "default",
+    "color": "#16a085"
+  },
+  {
+    "nickname": "short",
+    "email": "default",
+    "color": "#f1c40f"
+  },
+  {
+    "nickname": "longlonglong",
+    "email": "default",
+    "color": "#e74c3c"
+  }
+]

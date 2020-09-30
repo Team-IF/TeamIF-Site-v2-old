@@ -4,6 +4,8 @@ import { Heading1 } from '../../../atomics/Typography/Heading';
 import AlignContainer from '../../../utils/AlignContainer';
 import MemberCard from '../../MemberCard';
 
+import MemberData from '../../../data/member.data.json';
+
 const Container = styled.section`
   display: flex;
   align-items: center;
@@ -25,11 +27,9 @@ const Member: React.FC = () => {
       <AlignContainer>
         <TitleStyle>Member.</TitleStyle>
         <MemberList>
-          <MemberCard email="default" nickname="nickname" color="#16a085" />
-          <MemberCard email="default" nickname="short" color="#e67e22" />
-          <MemberCard email="default" nickname="longlonglong" color="#f1c40f" />
-          <MemberCard email="default" nickname="longlonglong" color="#f1c40f" />
-          <MemberCard email="default" nickname="longlonglong" color="#f1c40f" />
+          {MemberData.map((member) => (
+            <MemberCard email={member.email} nickname={member.nickname} color={member.color} />
+          ))}
         </MemberList>
       </AlignContainer>
     </Container>

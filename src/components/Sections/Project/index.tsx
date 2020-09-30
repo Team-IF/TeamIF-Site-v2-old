@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Heading1 } from '../../../atomics/Typography/Heading';
 import AlignContainer from '../../../utils/AlignContainer';
 import ProjectCard from '../../ProjectCard';
+import ProjectData from '../../../data/project.data.json';
 
 const Container = styled.section`
   display: flex;
@@ -26,23 +27,11 @@ const Project: React.FC = () => {
         <TitleStyle>Project.</TitleStyle>
 
         <CardList>
-          <ProjectCard title="JustHear.me" github="https://github.com/Team-IF/JustHear.me">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id purus dui. Praesent
-            sit amet mi turpis. Nullam viverra, quam eget posuere bibendum, lorem lectus vestibulum
-            risus, a venenatis risus diam sit amet ipsum.
-          </ProjectCard>
-
-          <ProjectCard title="comcigan-py" github="https://github.com/Team-IF/comcigan-py">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id purus dui. Praesent
-            sit amet mi turpis. Nullam viverra, quam eget posuere bibendum, lorem lectus vestibulum
-            risus, a venenatis risus diam sit amet ipsum.
-          </ProjectCard>
-
-          <ProjectCard title="프로젝트" github="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id purus dui. Praesent
-            sit amet mi turpis. Nullam viverra, quam eget posuere bibendum, lorem lectus vestibulum
-            risus, a venenatis risus diam sit amet ipsum.
-          </ProjectCard>
+          {ProjectData.map((project) => (
+            <ProjectCard title={project.name} github={project.github}>
+              {project.description}
+            </ProjectCard>
+          ))}
         </CardList>
       </AlignContainer>
     </Container>
