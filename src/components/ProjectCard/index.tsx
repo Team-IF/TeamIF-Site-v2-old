@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import Button from '../../atomics/Button';
+import SCREEN_SIZE from '../../utils/ScreenSize';
 
 const Card = styled.div`
   border: 1px solid #eaeaea;
@@ -15,6 +16,15 @@ const Card = styled.div`
   grid-template-rows: auto 80px;
 `;
 
+const CardTitle = styled.h1`
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  @media screen and (max-width: ${SCREEN_SIZE.MOBILE}) {
+    font-size: 1.3rem;
+  }
+`;
+
 interface ProjectCardProps {
   readonly title: string;
   readonly github: string;
@@ -24,7 +34,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, github, children }) =>
   return (
     <Card>
       <div>
-        <h1>{title}</h1>
+        <CardTitle>{title}</CardTitle>
         <p>{children}</p>
       </div>
       <div>

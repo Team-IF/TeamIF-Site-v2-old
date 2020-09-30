@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import SCREEN_SIZE from '../../utils/ScreenSize';
 
 const TitleStyle = styled.p`
   font-weight: bold;
@@ -11,7 +12,7 @@ const TitleStyle = styled.p`
   background-repeat: no-repeat;
   transition: background-size 0.2s ease-in;
   background-image: linear-gradient(transparent 80%, #000 20%);
-  
+
   cursor: pointer;
 
   &:hover {
