@@ -2,6 +2,7 @@ import React from 'react';
 import NavigationBar from '../components/NavigationBar';
 import About from '../components/Sections/About';
 import Project from '../components/Sections/Project';
+import Member from '../components/Sections/Member';
 
 const Home: React.FC = () => {
   return (
@@ -9,6 +10,7 @@ const Home: React.FC = () => {
       <NavigationBar />
       <About />
       <Project />
+      <Member />
     </>
   );
 };
