@@ -4,16 +4,27 @@ import Button from '../../../atomics/Button';
 import { Heading1 } from '../../../atomics/Typography/Heading';
 import AlignContainer from '../../../utils/AlignContainer';
 
+import background from '../../../assets/background.jpg';
+
 const Container = styled.section`
   height: 26rem;
-  background-color: #f1f6ff;
+
+  background-image: url(${background});
+  background-size: cover;
 
   display: flex;
   align-items: center;
+
+  color: white;
 `;
 
 const SubTitleStyle = styled.p`
   font-size: 1.3rem;
+`;
+
+const ButtonStyle = styled(Button)`
+  background-color: white;
+  color: black;
 `;
 
 const About: React.FC = () => {
@@ -23,7 +34,7 @@ const About: React.FC = () => {
         <Heading1>We Make IF to Reality, Dream to Action.</Heading1>
         <SubTitleStyle>청소년 프로그래머 팀, TeamIF</SubTitleStyle>
 
-        <Button>지원하기</Button>
+        <ButtonStyle>지원하기</ButtonStyle>
       </AlignContainer>
     </Container>
   );
