@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Button from '../../atomics/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Card = styled.div`
   border: 1px solid #eaeaea;
@@ -26,11 +28,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, github, children }) =>
         <p>{children}</p>
       </div>
       <div>
-        <Button>
-          <a href={github} target="_blank" rel="noopener noreferrer">
+        <a href={github} target="_blank" rel="noopener noreferrer">
+          <Button>
+            <FontAwesomeIcon icon={faGithub} />{' '}
             GitHub
-          </a>
-        </Button>
+          </Button>
+        </a>
       </div>
     </Card>
   );
