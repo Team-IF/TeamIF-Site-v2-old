@@ -2,6 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import md5 from 'md5';
 
+const Wrapper = styled.div`
+  flex: 0 1;
+  margin-bottom: 10px;
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+`;
+
 const Card = styled.div<{ color: string }>`
   display: flex;
   flex-direction: row;
@@ -25,12 +35,9 @@ const Card = styled.div<{ color: string }>`
     font-size: 12px;
   }
 
-  flex: 0 1;
-  margin-bottom: 10px;
-  margin-right: 15px;
-
-  &:last-child {
-    margin-right: 0;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
   }
 `;
 
@@ -38,19 +45,24 @@ interface MemberCardProps {
   readonly email: string;
   readonly nickname: string;
   readonly color: string;
+  readonly github: string;
 }
 
-const MemberCard: React.FC<MemberCardProps> = ({ email, nickname, color }) => {
+const MemberCard: React.FC<MemberCardProps> = ({ email, nickname, color, github }) => {
   return (
-    <Card color={color}>
-      <img
-        src={`https://www.gravatar.com/avatar/${md5(
-          email
-        )}?s=1024&d=https%3A%2F%2Fteamif%2Eio%2Fdefault_profile%2Epng`}
-        alt="profile"
-      />
-      <p>{nickname}</p>
-    </Card>
+    <Wrapper>
+      <a href={github} target="_blank" rel="noopener noreferrer">
+        <Card color={color}>
+          <img
+            src={`https://www.gravatar.com/avatar/${md5(
+              email
+            )}?s=1024&d=https%3A%2F%2Fteamif%2Eio%2Fdefault_profile%2Epng`}
+            alt="profile"
+          />
+          <p>{nickname}</p>
+        </Card>
+      </a>
+    </Wrapper>
   );
 };
 

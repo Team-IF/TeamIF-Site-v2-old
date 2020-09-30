@@ -33,6 +33,7 @@ const Member: React.FC = () => {
               email={member.email}
               nickname={member.nickname}
               color={member.color}
+              github={member.github}
             />
           ))}
         </MemberList>

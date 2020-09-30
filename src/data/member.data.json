@@ -2,16 +2,19 @@
   {
     "nickname": "nickname",
     "email": "default",
-    "color": "#16a085"
+    "color": "#16a085",
+    "github": "https://github.com"
   },
   {
     "nickname": "short",
     "email": "default",
-    "color": "#f1c40f"
+    "color": "#f1c40f",
+    "github": "https://github.com"
   },
   {
     "nickname": "longlonglong",
     "email": "default",
-    "color": "#e74c3c"
+    "color": "#e74c3c",
+    "github": "https://github.com"
   }
 ]
