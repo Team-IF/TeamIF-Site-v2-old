@@ -26,9 +26,6 @@ const NavigationBar: React.FC = () => {
 
       <NavItemListStyle>
         <NavItem>
-          <a href="#about">About</a>
-        </NavItem>
-        <NavItem>
           <a href="#project">Project</a>
         </NavItem>
         <NavItem>
