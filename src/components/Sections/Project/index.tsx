@@ -13,17 +13,6 @@ const TitleStyle = styled(Heading1)`
   margin: 2rem 0;
 `;
 
-const CardStyle = styled.div`
-  border: 1px solid #eaeaea;
-  border-radius: 20px;
-  box-shadow: 0 0 30px rgba(169, 169, 169, 0.2);
-
-  padding: 1.5rem;
-
-  display: grid;
-  grid-template-rows: auto 80px;
-`;
-
 const CardList = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
