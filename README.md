@@ -1,12 +1,12 @@
-# TeamIF-Site
+# TeamIF-Site-v2
 
 ## Usage
 
-- `npm install`
+- `yarn`
     - 의존성 설치
-- `npm run build`
+- `yarn build`
     - 사이트 빌드
-- `npm start`
+- `yarn start`
     - 개발 모드 시작
-- `npm run lint`
+- `yarn lint`
     - eslint 검사
