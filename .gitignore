@@ -25,3 +25,7 @@ yarn-error.log*
 
 # Jetbrains WebStorm Setting
 /.idea
+
+# Lock files
+package-lock.json
+yarn.lock
