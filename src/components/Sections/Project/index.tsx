@@ -28,7 +28,7 @@ const Project: React.FC = () => {
 
         <CardList>
           {ProjectData.map((project) => (
-            <ProjectCard title={project.name} github={project.github}>
+            <ProjectCard key={project.name} title={project.name} github={project.github}>
               {project.description}
             </ProjectCard>
           ))}

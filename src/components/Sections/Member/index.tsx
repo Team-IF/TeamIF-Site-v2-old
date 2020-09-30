@@ -28,7 +28,12 @@ const Member: React.FC = () => {
         <TitleStyle>Member.</TitleStyle>
         <MemberList>
           {MemberData.map((member) => (
-            <MemberCard email={member.email} nickname={member.nickname} color={member.color} />
+            <MemberCard
+              key={member.nickname}
+              email={member.email}
+              nickname={member.nickname}
+              color={member.color}
+            />
           ))}
         </MemberList>
       </AlignContainer>
