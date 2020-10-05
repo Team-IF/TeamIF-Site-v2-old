@@ -5,6 +5,7 @@ import { Heading1 } from '../../../atomics/Typography/Heading'
 import AlignContainer from '../../../utils/AlignContainer'
 
 import background from '../../../assets/background.jpg'
+import { Link } from 'react-router-dom'
 
 const Container = styled.section`
   height: 26rem;
@@ -34,7 +35,9 @@ const About: React.FC = () => {
         <Heading1>We Make IF to Reality, Dream to Action.</Heading1>
         <SubTitleStyle>청소년 프로그래머 팀, TeamIF</SubTitleStyle>
 
-        <ButtonStyle>지원하기</ButtonStyle>
+        <ButtonStyle>
+          <Link to='/career'>지원하기</Link>
+        </ButtonStyle>
       </AlignContainer>
     </Container>
   )

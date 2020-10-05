@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, useEffect } from 'react'
 import NavigationBar from '../components/NavigationBar'
 
 const App: React.FC = ({ children }) => {

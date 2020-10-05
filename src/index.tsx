@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import * as serviceWorker from './serviceWorker'
 import App from './components/App'
 import Home from './pages/Home'
+import Career from './pages/Career'
 import { BrowserRouter, Route } from 'react-router-dom'
 
 import './styles/global.css'
@@ -12,6 +13,7 @@ ReactDOM.render(
     <BrowserRouter>
       <App>
         <Route exact path='/' component={Home} />
+        <Route exact path='/career' component={Career} />
       </App>
     </BrowserRouter>
   </React.StrictMode>,
