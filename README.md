@@ -1,5 +1,7 @@
 # TeamIF-Site-v2
 
+[![Build Status](https://img.shields.io/travis/com/Team-IF/TeamIF-Site-v2/master?style=for-the-badge)](https://travis-ci.com/Team-IF/TeamIF-Site-v2)
+
 ## Usage
 
 - `yarn`
