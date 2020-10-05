@@ -1,5 +1,5 @@
-import React, { FC } from 'react';
-import NavigationBar from '../components/NavigationBar';
+import React, { FC } from 'react'
+import NavigationBar from '../components/NavigationBar'
 
 const App: React.FC = ({ children }) => {
   return (
@@ -7,7 +7,7 @@ const App: React.FC = ({ children }) => {
       <NavigationBar />
       {children}
     </>
-  );
-};
+  )
+}
 
-export default App;
+export default App

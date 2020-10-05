@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import md5 from 'md5';
+import React from 'react'
+import styled from 'styled-components'
+import md5 from 'md5'
 
 const Wrapper = styled.div`
   flex: 0 1;
@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   &:last-child {
     margin-right: 0;
   }
-`;
+`
 
 const Card = styled.div<{ color: string }>`
   display: flex;
@@ -39,31 +39,36 @@ const Card = styled.div<{ color: string }>`
     cursor: pointer;
     text-decoration: underline;
   }
-`;
+`
 
 interface MemberCardProps {
-  readonly email: string;
-  readonly nickname: string;
-  readonly color: string;
-  readonly github: string;
+  readonly email: string
+  readonly nickname: string
+  readonly color: string
+  readonly github: string
 }
 
-const MemberCard: React.FC<MemberCardProps> = ({ email, nickname, color, github }) => {
+const MemberCard: React.FC<MemberCardProps> = ({
+  email,
+  nickname,
+  color,
+  github
+}) => {
   return (
     <Wrapper>
-      <a href={github} target="_blank" rel="noopener noreferrer">
+      <a href={github} target='_blank' rel='noopener noreferrer'>
         <Card color={color}>
           <img
             src={`https://www.gravatar.com/avatar/${md5(
               email
             )}?s=1024&d=https%3A%2F%2Fteamif%2Eio%2Fdefault_profile%2Epng`}
-            alt="profile"
+            alt='profile'
           />
           <p>{nickname}</p>
         </Card>
       </a>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default MemberCard;
+export default MemberCard

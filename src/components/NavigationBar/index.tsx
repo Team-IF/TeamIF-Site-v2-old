@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import NavTitle from './NavTitle';
-import NavItem from './NavItem';
-import SCREEN_SIZE from '../../utils/ScreenSize';
+import React from 'react'
+import styled from 'styled-components'
+import NavTitle from './NavTitle'
+import NavItem from './NavItem'
+import SCREEN_SIZE from '../../utils/ScreenSize'
 
 const NavContainer = styled.nav`
   display: flex;
@@ -16,7 +16,7 @@ const NavContainer = styled.nav`
     justify-content: center;
     align-items: center;
   }
-`;
+`
 
 const NavItemListStyle = styled.div`
   display: flex;
@@ -25,28 +25,28 @@ const NavItemListStyle = styled.div`
   @media screen and (max-width: ${SCREEN_SIZE.TABLET}) {
     display: none;
   }
-`;
+`
 
 const NavigationBar: React.FC = () => {
   return (
     <NavContainer>
       <NavTitle>
-        <a href="/">TeamIF</a>
+        <a href='/'>TeamIF</a>
       </NavTitle>
 
       <NavItemListStyle>
         <NavItem>
-          <a href="#project">Project</a>
+          <a href='#project'>Project</a>
         </NavItem>
         <NavItem>
-          <a href="#member">Member</a>
+          <a href='#member'>Member</a>
         </NavItem>
         <NavItem>
-          <a href="#recruit">Recruit</a>
+          <a href='#recruit'>Recruit</a>
         </NavItem>
       </NavItemListStyle>
     </NavContainer>
-  );
-};
+  )
+}
 
-export default NavigationBar;
+export default NavigationBar

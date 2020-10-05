@@ -3,10 +3,10 @@
 ## Usage
 
 - `yarn`
-    - 의존성 설치
+  - 의존성 설치
 - `yarn build`
-    - 사이트 빌드
+  - 사이트 빌드
 - `yarn start`
-    - 개발 모드 시작
+  - 개발 모드 시작
 - `yarn lint`
-    - eslint 검사
+  - eslint 검사

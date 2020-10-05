@@ -14,25 +14,28 @@
       // When the single page app is loaded further down in this file,
       // the correct url will be waiting in the browser's history for
       // the single page app to route accordingly.
-      (function (l) {
+      ;(function (l) {
         if (l.search) {
-          var q = {};
+          var q = {}
           l.search
             .slice(1)
             .split('&')
             .forEach(function (v) {
-              var a = v.split('=');
-              q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
-            });
+              var a = v.split('=')
+              q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&')
+            })
           if (q.p !== undefined) {
             window.history.replaceState(
               null,
               null,
-              l.pathname.slice(0, -1) + (q.p || '') + (q.q ? '?' + q.q : '') + l.hash
-            );
+              l.pathname.slice(0, -1) +
+                (q.p || '') +
+                (q.q ? '?' + q.q : '') +
+                l.hash
+            )
           }
         }
-      })(window.location);
+      })(window.location)
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
 
@@ -40,7 +43,10 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#5A5DED" />
-    <meta name="description" content="We Make IF to Reality, Dream to Action. TeamIF" />
+    <meta
+      name="description"
+      content="We Make IF to Reality, Dream to Action. TeamIF"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap"
       rel="stylesheet"
@@ -54,7 +60,9 @@
     </style>
   </head>
   <body>
-    <noscript>TeamIF 홈페이지를 이용하기 위해서는 JavaScript를 필요로 합니다.</noscript>
+    <noscript
+      >TeamIF 홈페이지를 이용하기 위해서는 JavaScript를 필요로 합니다.</noscript
+    >
     <div id="root"></div>
   </body>
 </html>

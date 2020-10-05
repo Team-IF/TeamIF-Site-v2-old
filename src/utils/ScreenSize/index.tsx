@@ -1,6 +1,6 @@
 const SCREEN_SIZE = {
   TABLET: '900px',
-  MOBILE: '480px',
-};
+  MOBILE: '480px'
+}
 
-export default SCREEN_SIZE;
+export default SCREEN_SIZE

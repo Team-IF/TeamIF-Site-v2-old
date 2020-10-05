@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import Button from '../../atomics/Button';
-import SCREEN_SIZE from '../../utils/ScreenSize';
+import React from 'react'
+import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import Button from '../../atomics/Button'
+import SCREEN_SIZE from '../../utils/ScreenSize'
 
 const Card = styled.div`
   border: 1px solid #eaeaea;
@@ -14,7 +14,7 @@ const Card = styled.div`
 
   display: grid;
   grid-template-rows: auto 80px;
-`;
+`
 
 const CardTitle = styled.h1`
   font-size: 1.5rem;
@@ -23,14 +23,18 @@ const CardTitle = styled.h1`
   @media screen and (max-width: ${SCREEN_SIZE.MOBILE}) {
     font-size: 1.3rem;
   }
-`;
+`
 
 interface ProjectCardProps {
-  readonly title: string;
-  readonly github: string;
+  readonly title: string
+  readonly github: string
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, github, children }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  title,
+  github,
+  children
+}) => {
   return (
     <Card>
       <div>
@@ -38,14 +42,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, github, children }) =>
         <p>{children}</p>
       </div>
       <div>
-        <a href={github} target="_blank" rel="noopener noreferrer">
+        <a href={github} target='_blank' rel='noopener noreferrer'>
           <Button>
             <FontAwesomeIcon icon={faGithub} /> GitHub
           </Button>
         </a>
       </div>
     </Card>
-  );
-};
+  )
+}
 
-export default ProjectCard;
+export default ProjectCard

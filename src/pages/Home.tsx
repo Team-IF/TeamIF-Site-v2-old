@@ -1,7 +1,7 @@
-import React from 'react';
-import About from '../components/Sections/About';
-import Project from '../components/Sections/Project';
-import Member from '../components/Sections/Member';
+import React from 'react'
+import About from '../components/Sections/About'
+import Project from '../components/Sections/Project'
+import Member from '../components/Sections/Member'
 
 const Home: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const Home: React.FC = () => {
       <Project />
       <Member />
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

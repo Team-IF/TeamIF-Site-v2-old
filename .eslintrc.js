@@ -16,6 +16,6 @@ module.exports = {
     'react/jsx-one-expression-per-line': 'off',
     'linebreak-style': 'off',
     'import/extensions': 'off',
-    'global-require': 'off',
-  },
-};
+    'global-require': 'off'
+  }
+}

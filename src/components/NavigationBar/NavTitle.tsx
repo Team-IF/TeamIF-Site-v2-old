@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 const TitleStyle = styled.p`
   font-weight: bold;
@@ -17,10 +17,10 @@ const TitleStyle = styled.p`
   &:hover {
     background-size: 100% 100%;
   }
-`;
+`
 
 const NavTitle: React.FC = ({ children }) => {
-  return <TitleStyle>{children}</TitleStyle>;
-};
+  return <TitleStyle>{children}</TitleStyle>
+}
 
-export default NavTitle;
+export default NavTitle

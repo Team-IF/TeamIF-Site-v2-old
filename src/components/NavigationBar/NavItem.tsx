@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 const ItemStyle = styled.p`
   display: flex;
@@ -20,10 +20,10 @@ const ItemStyle = styled.p`
   &:hover {
     background-size: 100% 100%;
   }
-`;
+`
 
 const NavItem: React.FC = ({ children }) => {
-  return <ItemStyle>{children}</ItemStyle>;
-};
+  return <ItemStyle>{children}</ItemStyle>
+}
 
-export default NavItem;
+export default NavItem

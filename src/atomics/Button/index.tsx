@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const Button = styled.button`
   margin-top: 2rem;
@@ -18,6 +18,6 @@ const Button = styled.button`
     background-color: var(--color-teamif);
     color: white;
   }
-`;
+`
 
-export default Button;
+export default Button
