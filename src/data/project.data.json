@@ -1,17 +1,17 @@
 [
   {
-    "name": "Project Name1",
-    "description": "Project",
-    "github": "https://github.com"
+    "name": "DiscordManager",
+    "description": "누구나 쉽게 디스코드 봇을 만들어보세요. 초심자를 위한 C# 디스코드 봇 라이브러리입니다.",
+    "github": "https://github.com/Team-IF/DiscordManager"
   },
   {
-    "name": "Project Name2",
-    "description": "Project",
-    "github": "https://github.com"
+    "name": "Into The Deeper World",
+    "description": "두 세계를 오가는 주인공이 되어 2D와 3D를 모두 즐겨보세요. Unity로 만들어진 인디게임입니다.",
+    "github": "https://github.com/Team-IF/into-the-deeper-world"
   },
   {
-    "name": "Project Name3",
-    "description": "Project",
-    "github": "https://github.com"
+    "name": "MRS Launcher",
+    "description": "마인크래프트 MRS 서버를 쉽게 즐겨보세요. MRS 서버를 위한 모드팩 런처입니다.",
+    "github": "https://github.com/Team-IF/MRS-electronjs-launcher"
   }
 ]
