@@ -11,24 +11,28 @@ const Container = styled.section`
   background-image: url(${background});
   background-size: cover;
 
+  background-position-y: 10%;
+
   display: flex;
   align-items: center;
 
   text-align: center;
-
-  color: black;
 `
 
-const SubTitleStyle = styled.p`
-  font-size: 1.3rem;
+const StyledHeading = styled(Heading1)`
+  color: black;
+  opacity: 0.8;
 `
 
 const RecruitAbout: React.FC = () => {
   return (
     <Container>
       <AlignContainer>
-        <Heading1>TeamIF와 함께할 팀원을 모집합니다</Heading1>
-        <SubTitleStyle>청소년이라면 누구나 함께할 수 있습니다</SubTitleStyle>
+        <StyledHeading>
+          TeamIF와 함께할
+          <br />
+          청소년 팀원을 모집합니다
+        </StyledHeading>
       </AlignContainer>
     </Container>
   )
