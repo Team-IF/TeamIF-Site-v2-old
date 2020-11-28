@@ -2,8 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 
 const TitleStyle = styled.p`
-  font-weight: bold;
+  font-weight: 600;
   font-size: 2rem;
+  font-family: 'Fira Sans', sans-serif;
 
   color: var(--color-teamif);
 
