@@ -6,7 +6,7 @@ const TipText = styled.p`
   color: var(--color-tip);
   font-size: 14px;
 
-  margin-bottom: 2rem;
+  margin: 0 10px 2rem 10px;
 `
 
 const RecruitFormHeader = () => {
