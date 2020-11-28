@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { BrowserRouter, Route } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker'
 import App from './components/App'
 import Home from './pages/Home'
-import Career from './pages/Career'
-import { BrowserRouter, Route } from 'react-router-dom'
+import Recruit from './pages/Recruit'
 
 import './styles/global.css'
 
@@ -13,7 +13,7 @@ ReactDOM.render(
     <BrowserRouter>
       <App>
         <Route exact path='/' component={Home} />
-        <Route exact path='/career' component={Career} />
+        <Route exact path='/recruit' component={Recruit} />
       </App>
     </BrowserRouter>
   </React.StrictMode>,

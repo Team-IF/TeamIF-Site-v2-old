@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import NavTitle from './NavTitle'
 import NavItem from './NavItem'
 import SCREEN_SIZE from '../../utils/ScreenSize'
+import NoStyleLink from '../../atomics/NoStyleLink'
 
 const NavContainer = styled.nav`
   display: flex;
@@ -31,18 +32,18 @@ const NavigationBar: React.FC = () => {
   return (
     <NavContainer>
       <NavTitle>
-        <a href='/'>TeamIF</a>
+        <NoStyleLink to='/'>TeamIF</NoStyleLink>
       </NavTitle>
 
       <NavItemListStyle>
         <NavItem>
-          <a href='#project'>Project</a>
+          <NoStyleLink to='/#project'>Project</NoStyleLink>
         </NavItem>
         <NavItem>
-          <a href='#member'>Member</a>
+          <NoStyleLink to='/#member'>Member</NoStyleLink>
         </NavItem>
         <NavItem>
-          <a href='#recruit'>Recruit</a>
+          <NoStyleLink to='/recruit'>Recruit</NoStyleLink>
         </NavItem>
       </NavItemListStyle>
     </NavContainer>
