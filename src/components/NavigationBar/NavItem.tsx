@@ -5,7 +5,7 @@ const ItemStyle = styled.p`
   display: flex;
   align-self: center;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 
   color: black;
 
