@@ -5,7 +5,7 @@ import md5 from 'md5'
 const Wrapper = styled.div`
   flex: 0 1;
   margin-bottom: 10px;
-  margin-right: 15px;
+  margin-right: 10px;
 
   &:last-child {
     margin-right: 0;
