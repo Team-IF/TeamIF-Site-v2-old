@@ -1,7 +1,12 @@
 import React from 'react'
+import RecruitAbout from '../components/Sections/RecruitAbout'
 
 const Recruit: React.FC = () => {
-  return <></>
+  return (
+    <>
+      <RecruitAbout />
+    </>
+  )
 }
 
 export default Recruit
