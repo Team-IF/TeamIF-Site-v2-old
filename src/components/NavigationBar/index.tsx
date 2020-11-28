@@ -37,10 +37,7 @@ const NavigationBar: React.FC = () => {
 
       <NavItemListStyle>
         <NavItem>
-          <NoStyleLink to='/#project'>Project</NoStyleLink>
-        </NavItem>
-        <NavItem>
-          <NoStyleLink to='/#member'>Member</NoStyleLink>
+          <NoStyleLink to='/'>Home</NoStyleLink>
         </NavItem>
         <NavItem>
           <NoStyleLink to='/recruit'>Recruit</NoStyleLink>
