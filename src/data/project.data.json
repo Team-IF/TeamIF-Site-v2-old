@@ -1,6 +1,6 @@
 [
   {
-    "name": "DiscordManager",
+    "name": "Discord\nManager",
     "description": "누구나 쉽게 디스코드 봇을 만들어보세요. 초심자를 위한 C# 디스코드 봇 라이브러리입니다.",
     "github": "https://github.com/Team-IF/DiscordManager"
   },
