@@ -36,7 +36,7 @@ const About: React.FC = () => {
         <SubTitleStyle>청소년 프로그래머 팀, TeamIF</SubTitleStyle>
 
         <ButtonStyle>
-          <Link to='/career'>지원하기</Link>
+          <Link to='/recruit'>지원하기</Link>
         </ButtonStyle>
       </AlignContainer>
     </Container>
