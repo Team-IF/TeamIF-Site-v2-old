@@ -1,27 +1,42 @@
 import React from 'react'
 import styled from 'styled-components'
+import Logo from '../../assets/logo.png'
+import SCREEN_SIZE from '../../utils/ScreenSize'
 
-const TitleStyle = styled.p`
-  font-weight: 600;
-  font-size: 2rem;
-  font-family: 'Fira Sans', sans-serif;
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
 
-  color: var(--color-teamif);
+  background-color: var(--color-teamif);
+  width: 150px;
+  height: 64px;
 
-  background-size: 0% 100%;
-  background-repeat: no-repeat;
-  transition: background-size 0.2s ease-in;
-  background-image: linear-gradient(transparent 80%, #000 20%);
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
 
-  cursor: pointer;
-
-  &:hover {
-    background-size: 100% 100%;
+  @media screen and (max-width: ${SCREEN_SIZE.MOBILE}) {
+    width: 120px;
   }
 `
 
-const NavTitle: React.FC = ({ children }) => {
-  return <TitleStyle>{children}</TitleStyle>
+const ImageStyle = styled.img`
+  width: 64px;
+  height: 64px;
+
+  margin-left: -20px;
+
+  cursor: pointer;
+
+  @media screen and (max-width: ${SCREEN_SIZE.MOBILE}) {
+    margin-left: -14px;
+  }
+`
+
+const NavTitle: React.FC = () => {
+  return (
+    <Wrapper>
+      <ImageStyle src={Logo} />
+    </Wrapper>
+  )
 }
 
 export default NavTitle

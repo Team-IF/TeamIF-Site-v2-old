@@ -10,20 +10,16 @@ const NavContainer = styled.nav`
   flex-direction: row;
   justify-content: space-between;
 
-  width: 75vw;
-  margin: 1rem auto;
+  background: #343434;
 
-  @media screen and (max-width: ${SCREEN_SIZE.TABLET}) {
-    justify-content: center;
-    align-items: center;
-  }
+  height: 4rem;
 `
 
 const NavItemListStyle = styled.div`
   display: flex;
   flex-direction: row;
 
-  @media screen and (max-width: ${SCREEN_SIZE.TABLET}) {
+  @media screen and (max-width: ${SCREEN_SIZE.MOBILE}) {
     display: none;
   }
 `
@@ -31,13 +27,16 @@ const NavItemListStyle = styled.div`
 const NavigationBar: React.FC = () => {
   return (
     <NavContainer>
-      <NavTitle>
-        <NoStyleLink to='/'>TeamIF</NoStyleLink>
-      </NavTitle>
+      <NoStyleLink to='/'>
+        <NavTitle />
+      </NoStyleLink>
 
       <NavItemListStyle>
         <NavItem>
           <NoStyleLink to='/'>Home</NoStyleLink>
+        </NavItem>
+        <NavItem>
+          <NoStyleLink to='/about'>About</NoStyleLink>
         </NavItem>
         <NavItem>
           <NoStyleLink to='/recruit'>Recruit</NoStyleLink>
