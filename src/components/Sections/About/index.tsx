@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import background from '../../../assets/background.jpg'
 import Button from '../../../atomics/Button'
 import { Heading1 } from '../../../atomics/Typography/Heading'
-
-import background from '../../../assets/background.jpg'
+import SCREEN_SIZE from '../../../utils/ScreenSize'
 
 const Container = styled.section`
   display: flex;
@@ -22,6 +22,10 @@ const Container = styled.section`
 
 const SubTitleStyle = styled.p`
   font-size: 1.3rem;
+
+  @media screen and (max-width: ${SCREEN_SIZE.MOBILE}) {
+    font-size: 1.1rem;
+  }
 `
 
 const ButtonStyle = styled(Button)`
