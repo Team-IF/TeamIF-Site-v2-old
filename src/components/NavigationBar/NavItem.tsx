@@ -1,29 +1,32 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const ItemStyle = styled.p`
+const Wrapper = styled.div`
   display: flex;
   align-self: center;
-  font-weight: bold;
-  font-size: 1.3rem;
+  transition: all 0.2s ease-in;
 
-  color: black;
-
-  background-size: 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 0.2s ease-in;
-  background-image: linear-gradient(transparent 80%, var(--color-teamif) 20%);
-
-  margin: 0 2rem;
-  cursor: pointer;
+  margin: 0 1rem;
+  padding: 5px 10px;
 
   &:hover {
-    background-size: 100% 100%;
+    background-color: #434343;
+    border-radius: 50px;
   }
 `
 
+const ItemStyle = styled.p`
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+`
+
 const NavItem: React.FC = ({ children }) => {
-  return <ItemStyle>{children}</ItemStyle>
+  return (
+    <Wrapper>
+      <ItemStyle>{children}</ItemStyle>
+    </Wrapper>
+  )
 }
 
 export default NavItem

@@ -6,7 +6,7 @@ export const Heading1 = styled.p`
   font-weight: bold;
 
   @media screen and (max-width: ${SCREEN_SIZE.MOBILE}) {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 `
 export const Heading2 = styled.p`
@@ -14,6 +14,6 @@ export const Heading2 = styled.p`
   font-weight: bold;
 
   @media screen and (max-width: ${SCREEN_SIZE.MOBILE}) {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 `
