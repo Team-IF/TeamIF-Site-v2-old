@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   padding: 5px 10px;
 
   &:hover {
-    background-color: #434343;
+    background-color: #353135;
     border-radius: 50px;
   }
 `

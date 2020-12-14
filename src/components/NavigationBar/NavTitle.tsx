@@ -19,10 +19,11 @@ const Wrapper = styled.div`
 `
 
 const ImageStyle = styled.img`
-  width: 64px;
-  height: 64px;
+  width: 80px;
+  height: 80px;
 
   margin-left: -20px;
+  margin-top: -8px;
 
   cursor: pointer;
 
