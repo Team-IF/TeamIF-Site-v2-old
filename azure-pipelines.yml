@@ -16,12 +16,12 @@ stages:
         versionSpec: 10.x
       displayName: Install Node.js
     - task: CmdLine@2
-      displayName: npm install and build
+      displayName: yarn install and build
       inputs:
         script: >
-          npm install
+          yarn install
 
-          npm run build
+          yarn run build
     - task: CmdLine@2
       displayName: Deploy
       inputs:
@@ -30,7 +30,7 @@ stages:
 
           git config --local user.email $(useremail)
 
-          npm install gh-pages
+          yarn install gh-pages
 
           echo $(cname) >> build/CNAME
 
