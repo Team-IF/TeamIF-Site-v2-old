@@ -21,6 +21,8 @@ const Container = styled.section`
 `
 
 const SubTitleStyle = styled.p`
+  margin-top: 10px;
+
   font-size: 1.3rem;
 
   @media screen and (max-width: ${SCREEN_SIZE.MOBILE}) {
@@ -41,7 +43,9 @@ const About: React.FC = () => {
         <SubTitleStyle>청소년 프로그래머 팀, TeamIF</SubTitleStyle>
 
         <ButtonStyle>
-          <Link to='/recruit'>지원하기</Link>
+          <Link to='/recruit'>
+            <b>지원하기</b>
+          </Link>
         </ButtonStyle>
       </div>
     </Container>

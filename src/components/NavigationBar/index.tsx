@@ -10,7 +10,7 @@ const NavContainer = styled.nav`
   flex-direction: row;
   justify-content: space-between;
 
-  background: #343434;
+  background: #201D20;
 
   height: 4rem;
 `
@@ -18,6 +18,8 @@ const NavContainer = styled.nav`
 const NavItemListStyle = styled.div`
   display: flex;
   flex-direction: row;
+
+  margin-right: 20px;
 
   @media screen and (max-width: ${SCREEN_SIZE.MOBILE}) {
     display: none;
