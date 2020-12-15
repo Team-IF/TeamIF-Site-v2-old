@@ -1,21 +1,37 @@
-# Node.js with React
-# Build a Node.js project that uses React.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
-
 trigger:
-- main
+  branches:
+    include:
+    - master
+stages:
+- stage: __default
+  jobs:
+  - job: Job
+    pool:
+      vmImage: ubuntu-latest
+      workspace:
+        clean: all
+    steps:
+    - task: NodeTool@0
+      inputs:
+        versionSpec: 10.x
+      displayName: Install Node.js
+    - task: CmdLine@2
+      displayName: npm install and build
+      inputs:
+        script: >
+          npm install
 
-pool:
-  vmImage: 'ubuntu-latest'
+          npm run build
+    - task: CmdLine@2
+      displayName: Deploy
+      inputs:
+        script: >
+          git config --local user.name $(username)
 
-steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
+          git config --local user.email $(useremail)
 
-- script: |
-    npm install
-    npm run build
-  displayName: 'npm install and build'
+          npm install gh-pages
+
+          echo $(cname) >> build/CNAME
+
+          npx gh-pages -r https://$(Token)@github.com/Team-IF/TeamIF-Site-v2.git -d build
