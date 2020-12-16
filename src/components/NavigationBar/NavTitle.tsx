@@ -20,8 +20,8 @@ const Wrapper = styled.div`
 `
 
 const StyledLogo = styled(Logo)`
-  width: 46px;
-  height: 46px;
+  width: 76px;
+  height: 76px;
 
   margin-left: -10px;
   margin-top: 5px;
