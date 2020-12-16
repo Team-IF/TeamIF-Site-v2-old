@@ -45,6 +45,7 @@ const NavigationBar: React.FC = () => {
         </NavItem>
         <NavItem>
           <a href='https://blog.teamif.io'>Blog</a>
+        </NavItem>
       </NavItemListStyle>
     </NavContainer>
   )
