@@ -12,7 +12,7 @@ const Container = styled.section`
   align-items: center;
   text-align: center;
 
-  height: calc(100vh - 64px);
+  height: calc(100vh);
 
   background-image: url(${background});
   background-size: cover;
