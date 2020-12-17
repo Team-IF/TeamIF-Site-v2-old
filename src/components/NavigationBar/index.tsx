@@ -43,6 +43,9 @@ const NavigationBar: React.FC = () => {
         <NavItem>
           <NoStyleLink to='/recruit'>Recruit</NoStyleLink>
         </NavItem>
+        <NavItem>
+          <a href='https://blog.teamif.io' rel='noopener noreferrer'>Blog</a>
+        </NavItem>
       </NavItemListStyle>
     </NavContainer>
   )
