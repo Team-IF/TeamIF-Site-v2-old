@@ -8,6 +8,8 @@ import ProjectData from '../../../data/project.data.json'
 const Container = styled.section`
   display: flex;
   align-items: center;
+
+  height: calc(100vh);
 `
 
 const TitleStyle = styled(Heading1)`
