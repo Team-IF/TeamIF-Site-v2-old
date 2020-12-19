@@ -14,7 +14,7 @@ const ItemStyle = styled.p`
     cursor: pointer;
 `
 
-const FooterTerms: React.FC = ({ children }) => {
+const FooterLinkItem: React.FC = ({ children }) => {
     return(
         <Wrapper>
             <ItemStyle>{children}</ ItemStyle>
@@ -22,4 +22,3 @@ const FooterTerms: React.FC = ({ children }) => {
     )
 }
 
-export default FooterTerms
