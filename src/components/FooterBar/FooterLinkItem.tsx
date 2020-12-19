@@ -22,3 +22,4 @@ const FooterLinkItem: React.FC = ({ children }) => {
     )
 }
 
+export default FooterLinkItem
