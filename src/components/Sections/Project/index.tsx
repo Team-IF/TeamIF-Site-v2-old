@@ -9,7 +9,7 @@ const Container = styled.section`
   display: flex;
   align-items: center;
 
-  height: calc(100vh);
+  height: 100vh;
 `
 
 const TitleStyle = styled(Heading1)`
