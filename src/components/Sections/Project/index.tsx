@@ -10,6 +10,7 @@ const Container = styled.section`
   align-items: center;
 
   height: 100vh;
+  padding-top: 4rem;
 `
 
 const TitleStyle = styled(Heading1)`
