@@ -7,14 +7,15 @@ import ProjectData from '../../../data/project.data.json'
 
 const Container = styled.section`
   display: flex;
+  justify-content: center;
   align-items: center;
 
   height: 100vh;
   padding-top: 4rem;
 `
 
-const TitleStyle = styled(Heading1)`
-  margin: 2rem 0;
+const Header = styled.div`
+  margin-bottom: 3rem;
 `
 
 const CardList = styled.div`
@@ -27,7 +28,10 @@ const Project: React.FC = () => {
   return (
     <Container id='project'>
       <AlignContainer>
-        <TitleStyle>Project.</TitleStyle>
+        <Header>
+          <Heading1>Project.</Heading1>
+          <h3>TeamIF가 만드는 프로젝트를 소개합니다.</h3>
+        </Header>
 
         <CardList>
           {ProjectData.map((project) => (
