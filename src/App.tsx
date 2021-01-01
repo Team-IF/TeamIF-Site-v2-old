@@ -6,7 +6,7 @@ const App: React.FC = ({ children }) => {
   return (
     <>
       <NavigationBar />
-      <body>{children}</body>
+      {children}
       <FooterBar />
     </>
   )

@@ -6,13 +6,21 @@ import SCREEN_SIZE from '../../utils/ScreenSize'
 import NoStyleLink from '../../atomics/NoStyleLink'
 
 const NavContainer = styled.nav`
+  position: absolute;
+
+  width: 100vw;
+  height: 4rem;
+
+  top: 0;
+  left: 0;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
-  background: #201D20;
+  background: #201d20;
 
-  height: 4rem;
+  z-index: 10;
 `
 
 const NavItemListStyle = styled.div`
@@ -44,7 +52,9 @@ const NavigationBar: React.FC = () => {
           <NoStyleLink to='/recruit'>Recruit</NoStyleLink>
         </NavItem>
         <NavItem>
-          <a href='https://blog.teamif.io' rel='noopener noreferrer'>Blog</a>
+          <a href='https://blog.teamif.io' rel='noopener noreferrer'>
+            Blog
+          </a>
         </NavItem>
       </NavItemListStyle>
     </NavContainer>
