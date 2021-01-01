@@ -4,7 +4,6 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker'
 import App from './App'
 import Home from './pages/Home'
-import Recruit from './pages/Recruit'
 
 import './styles/global.css'
 
@@ -13,7 +12,6 @@ ReactDOM.render(
     <BrowserRouter>
       <App>
         <Route exact path='/' component={Home} />
-        <Route exact path='/recruit' component={Recruit} />
       </App>
     </BrowserRouter>
   </React.StrictMode>,

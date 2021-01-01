@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import background from '../../../assets/background.jpg'
@@ -12,7 +12,7 @@ const Container = styled.section`
   align-items: center;
   text-align: center;
 
-  height: calc(100vh);
+  height: 100vh;
 
   background-image: url(${background});
   background-size: cover;
@@ -36,6 +36,8 @@ const ButtonStyle = styled(Button)`
 `
 
 const About: React.FC = () => {
+  useEffect(() => {}, [])
+
   return (
     <Container id='about'>
       <div>
