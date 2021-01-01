@@ -6,25 +6,23 @@ import Member from '../components/Sections/Member'
 
 const Home: React.FC = () => {
   return (
-    <>
-      <ReactFullpage
-        licensekey="aN5yBGO^s8"
-        scrollingSpeed={800}
-        render={() => (
-          <ReactFullpage.Wrapper>
-            <div className="section">
-              <About />
-            </div>
-            <div className="section">
-              <Project />
-            </div>
-            <div className="section">
-              <Member />
-            </div>
-          </ReactFullpage.Wrapper>
-        )}
-      />
-    </>
+    <ReactFullpage
+      licensekey='aN5yBGO^s8'
+      scrollingSpeed={800}
+      render={() => (
+        <ReactFullpage.Wrapper>
+          <div className='section'>
+            <About />
+          </div>
+          <div className='section'>
+            <Project />
+          </div>
+          <div className='section'>
+            <Member />
+          </div>
+        </ReactFullpage.Wrapper>
+      )}
+    />
   )
 }
 
