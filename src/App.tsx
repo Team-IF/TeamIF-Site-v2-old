@@ -1,6 +1,6 @@
 import React from 'react'
-import NavigationBar from '../components/NavigationBar'
-import FooterBar from '../components/FooterBar'
+import NavigationBar from './components/NavigationBar'
+import FooterBar from './components/FooterBar'
 
 const App: React.FC = ({ children }) => {
   return (
